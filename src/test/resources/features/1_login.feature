@@ -4,6 +4,8 @@ Scenario: Successfully login with valid credentials
  
  Given The user is on the login page
  When  The user login using "<Username>" and "<Password>"
+ //Alternate method for parameterisation 
+ //When The user login using $username and $password
  And The user should click on the login button
  Then The user should redirected to the main page
  

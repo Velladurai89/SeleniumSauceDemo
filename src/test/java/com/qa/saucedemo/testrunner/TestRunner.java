@@ -35,7 +35,8 @@ import io.cucumber.testng.CucumberOptions;
         "pretty", 
         "html:target/cucumber-reports.html",
         "json:target/cucumber-reports.json",
-        "rerun:target/rerun.txt"  // Generates rerun file for failed tests
+        "rerun:target/rerun.txt", // Generates rerun file for failed tests
+	"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm" //Generate allure report
     },
     monochrome = true
 )

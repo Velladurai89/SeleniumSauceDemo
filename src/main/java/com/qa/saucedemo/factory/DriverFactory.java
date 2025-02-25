@@ -40,7 +40,7 @@ public class DriverFactory {
             
             switch (browserName.toLowerCase()) {
                 case "chrome":
-                    WebDriverManager.chromedriver().setup();
+                    //WebDriverManager.chromedriver().setup();
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("--remote-allow-origins=*");
                     tlDriver.set(new ChromeDriver(options));
